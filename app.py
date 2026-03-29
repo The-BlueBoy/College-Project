@@ -14,11 +14,11 @@ st.title("📱 Fitness App User Growth Model")
 with st.form("input_form"):
     st.subheader("🧾 Enter Input Parameters")
 
-    days = st.number_input("Number of Days", min_value=30, max_value=365, value=100)
-    initial_users = st.number_input("Initial Users", min_value=50, max_value=10000, value=100)
-    growth_rate = st.number_input("Growth Rate (%)", min_value=1.0, max_value=50.0, value=5.0) / 100
-    retention_rate = st.number_input("Initial Retention (%)", min_value=50.0, max_value=100.0, value=85.0) / 100
-    retention_improvement = st.number_input("Retention Improvement (%)", min_value=0.0, max_value=5.0, value=0.05) / 100
+    days = st.number_input("Number of Days", value=100)
+    initial_users = st.number_input("Initial Users", value=100)
+    growth_rate = st.number_input("Growth Rate (%)", value=5.0) / 100
+    retention_rate = st.number_input("Initial Retention (%)", value=85.0) / 100
+    retention_improvement = st.number_input("Retention Improvement (%)", value=0.05) / 100
 
     submit = st.form_submit_button("🚀 Generate Analysis")
 
